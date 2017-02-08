@@ -14,6 +14,12 @@ module.exports = {
       filename: 'bundle.js',
       publicPath: '/'
     },
+    devtool: 'source-map',
+    devServer: {
+        inline: true,
+        contentBase: BUILD_DIR,
+        port: 3333
+    },
     module: {
         loaders: [{
             test: /\.jsx?/,
